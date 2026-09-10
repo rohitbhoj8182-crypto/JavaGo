@@ -1,11 +1,20 @@
-public  class Main {
-    static void main(String[] args) {
-        System.out.println("HELLO WORLD");
+import java.util.Scanner;
 
-        int age = 21;
-        System.out.println(age);
-        
-        double price = 11.1;
-        System.out.println("double eaxmple is " +price);
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int[] arr = new int[5];
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        for (int el : arr) {
+        }
+
+        sc.close();
     }
 }
