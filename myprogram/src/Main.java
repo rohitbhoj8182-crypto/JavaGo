@@ -6,19 +6,9 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        int[] arr = new int[5];
-
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print("Enter value :");
-            arr[i] = sc.nextInt();
-        }
-
-        for (int el : arr) {
-            if(el %2 == 0){
-                System.out.println(el);
-            }
-        }
-
+        Student stu = new Student("Roman",21,8.2,false);
+        Student stu2 = new Student("Vikas",18,10,true);
+        User us1 = new User("rohit");
         sc.close();
     }
 }
